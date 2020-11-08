@@ -63,6 +63,12 @@
             "name": "Go to file",
             "type": "command",
             "command": "workbench.action.quickOpen"
+        },
+        {
+            "keys": "c.d",
+            "name": "Go to definition",
+            "type": "command",
+            "command": "editor.action.revealDefinition"
         }
     ]
 }
