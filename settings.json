@@ -69,6 +69,13 @@
             "name": "Go to definition",
             "type": "command",
             "command": "editor.action.revealDefinition"
-        }
-    ]
+        },
+        {
+            "keys": "<",
+            "name": "Show buffers",
+            "type": "command",
+            "command": "workbench.action.showAllEditors"
+        },
+    ],
+    "workbench.editor.showTabs": false
 }
