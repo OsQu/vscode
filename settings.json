@@ -1,81 +1,96 @@
 {
-    "workbench.colorTheme": "Solarized Light",
-    "editor.formatOnSave": true,
-    "vim.smartRelativeLine": true,
-    "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Solarized Light",
+  "editor.formatOnSave": true,
+  "vim.smartRelativeLine": true,
+  "editor.minimap.enabled": false,
 
-    // Vim easymotion is required for Jump menu - <SPC> j
-    "vim.easymotion": true,
-    // Use system clipboard for vim
-    "vim.useSystemClipboard": true,
-    // Trigger the main which key menu with in the active editor with vim
-    // This cannot be put into keybindings.json because it will
-    // create conflict with Vim.
-    // https://github.com/stevenguh/spacecode/issues/3
-    "vim.normalModeKeyBindingsNonRecursive": [
+  // Vim easymotion is required for Jump menu - <SPC> j
+  "vim.easymotion": true,
+  // Use system clipboard for vim
+  "vim.useSystemClipboard": true,
+  // Trigger the main which key menu with in the active editor with vim
+  // This cannot be put into keybindings.json because it will
+  // create conflict with Vim.
+  // https://github.com/stevenguh/spacecode/issues/3
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
         {
-            "before": [
-                "<space>"
-            ],
-            "commands": [
-                "vspacecode.space"
-            ]
-        },
-        {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "vspacecode.space",
-                {
-                    "command": "whichkey.triggerKey",
-                    "args": "m"
-                }
-            ]
+          "command": "whichkey.triggerKey",
+          "args": "m"
         }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
         {
-            "before": [
-                "<space>"
-            ],
-            "commands": [
-                "vspacecode.space"
-            ]
-        },
-        {
-            "before": [
-                ","
-            ],
-            "commands": [
-                "vspacecode.space",
-                {
-                    "command": "whichkey.triggerKey",
-                    "args": "m"
-                }
-            ]
+          "command": "whichkey.triggerKey",
+          "args": "m"
         }
-    ],
-    // VSpacecode overrides
-    "vspacecode.bindingOverrides": [
-        {
-            "keys": "f.f",
-            "name": "Go to file",
-            "type": "command",
-            "command": "workbench.action.quickOpen"
-        },
-        {
-            "keys": "c.d",
-            "name": "Go to definition",
-            "type": "command",
-            "command": "editor.action.revealDefinition"
-        },
-        {
-            "keys": "<",
-            "name": "Show buffers",
-            "type": "command",
-            "command": "workbench.action.showAllEditors"
-        },
-    ],
-    "workbench.editor.showTabs": false
+      ]
+    }
+  ],
+  // VSpacecode overrides
+  "vspacecode.bindingOverrides": [
+    {
+      "keys": "f.f",
+      "name": "Go to file",
+      "type": "command",
+      "command": "workbench.action.quickOpen"
+    },
+    {
+      "keys": "c.d",
+      "name": "Go to definition",
+      "type": "command",
+      "command": "editor.action.revealDefinition"
+    },
+    {
+      "keys": "c.D",
+      "name": "Search all references",
+      "type": "command",
+      "command": "editor.action.referenceSearch.trigger"
+    },
+    {
+      "keys": "c.k",
+      "name": "Open hover",
+      "type": "command",
+      "command": "editor.action.showHover"
+    },
+    {
+      "keys": "<",
+      "name": "Show buffers",
+      "type": "command",
+      "command": "workbench.action.showAllEditors"
+    },
+    {
+      "keys": "g.g",
+      "name": "Status",
+      "type": "command",
+      "command": "magit.status"
+    },
+    {
+      "keys": "b.k",
+      "name": "Close buffer",
+      "type": "command",
+      "command": "workbench.action.closeActiveEditor"
+    }
+  ],
+  "workbench.editor.showTabs": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
