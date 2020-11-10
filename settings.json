@@ -47,12 +47,6 @@
   // VSpacecode overrides
   "vspacecode.bindingOverrides": [
     {
-      "keys": "f.f",
-      "name": "Go to file",
-      "type": "command",
-      "command": "workbench.action.quickOpen"
-    },
-    {
       "keys": "c.d",
       "name": "Go to definition",
       "type": "command",
