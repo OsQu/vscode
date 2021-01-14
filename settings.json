@@ -86,5 +86,18 @@
   "workbench.editor.showTabs": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Disable gitlens rebase view
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "git-rebase-todo"
+    }
+  ],
+  "window.zoomLevel": 0,
+  "extensions.ignoreRecommendations": true
 }
