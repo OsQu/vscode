@@ -1,8 +1,10 @@
 {
   "workbench.colorTheme": "Solarized Light",
   "editor.formatOnSave": true,
+  "editor.wordWrapColumn": 80,
   "vim.smartRelativeLine": true,
   "editor.minimap.enabled": false,
+  "files.insertFinalNewline": true,
 
   // Vim easymotion is required for Jump menu - <SPC> j
   "vim.easymotion": true,
@@ -87,17 +89,83 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true
+  },
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   // Disable gitlens rebase view
-  "workbench.editorAssociations": [
-    {
-      "viewType": "default",
-      "filenamePattern": "git-rebase-todo"
-    }
-  ],
-  "window.zoomLevel": 0,
-  "extensions.ignoreRecommendations": true
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "extensions.ignoreRecommendations": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "explorer.confirmDelete": false,
+  "cSpell.userWords": [
+    "antd",
+    "anticon",
+    "ASVS",
+    "atlassian",
+    "authtag",
+    "Calavera",
+    "ciphertext",
+    "configurability",
+    "creeped",
+    "customfield",
+    "dataloader",
+    "dedup",
+    "deduping",
+    "deduplicated",
+    "demoable",
+    "Eero",
+    "gcloud",
+    "grpc",
+    "hubspot",
+    "jsonb",
+    "Juho",
+    "kube",
+    "kubernetes",
+    "Manny",
+    "Meche",
+    "mrkdwn",
+    "nodegit",
+    "octokit",
+    "opentelemetry",
+    "prome",
+    "psql",
+    "rapu",
+    "recordset",
+    "reponame",
+    "resynced",
+    "Resyncing",
+    "Rolledback",
+    "Serializers",
+    "Simpleview",
+    "slonik",
+    "sqlcommenter",
+    "stackdriver",
+    "swarmia",
+    "timeframe",
+    "timestamptz",
+    "UNCATEGORIZED",
+    "undefines",
+    "Unencrypted",
+    "unnest",
+    "Untracked",
+    "upsert",
+    "upsertable",
+    "worklog"
+  ]
 }
